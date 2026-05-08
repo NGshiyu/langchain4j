@@ -1,0 +1,279 @@
+# Instincts generated from https://github.com/NGshiyu/langchain4j
+# Generated: 2026-05-08T13:50:58.520Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: langchain4j-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/langchain4j
+---
+
+# Langchain4j Commit Length
+
+## Action
+
+Keep commit messages concise (~49 characters)
+
+## Evidence
+
+- Average commit message length: 49 chars
+- Based on 3 commits
+
+---
+id: langchain4j-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/langchain4j
+---
+
+# Langchain4j Naming Files
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: PascalCase
+
+---
+id: langchain4j-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/langchain4j
+---
+
+# Langchain4j Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: langchain4j-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/langchain4j
+---
+
+# Langchain4j Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: langchain4j-test-naming
+trigger: "when creating a test file"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/langchain4j
+---
+
+# Langchain4j Test Naming
+
+## Action
+
+Name test files using the pattern: *.test.ts
+
+## Evidence
+
+- File pattern: *.test.ts
+- Consistent across test files
+
+---
+id: langchain4j-instinct-class-naming
+trigger: "When creating or renaming a Java class file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/langchain4j
+---
+
+# Langchain4j Instinct Class Naming
+
+## Action
+
+Use PascalCase for the class name and file name
+
+## Evidence
+
+- Pattern in namingConventions.files: PascalCase
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: langchain4j-instinct-function-naming
+trigger: "When defining a Java method or function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/langchain4j
+---
+
+# Langchain4j Instinct Function Naming
+
+## Action
+
+Use camelCase for the function name
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: langchain4j-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/langchain4j
+---
+
+# Langchain4j Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: langchain4j-instinct-import-style
+trigger: "When importing modules or classes"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/langchain4j
+---
+
+# Langchain4j Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: langchain4j-instinct-export-style
+trigger: "When exporting modules or classes"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/langchain4j
+---
+
+# Langchain4j Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: langchain4j-instinct-commit-prefix
+trigger: "When writing a git commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: NGshiyu/langchain4j
+---
+
+# Langchain4j Instinct Commit Prefix
+
+## Action
+
+Prefix the message with the type of change, such as 'fix' or 'docs'
+
+## Evidence
+
+- Seen in commit: fix(anthropic): map JsonObjectSchema definitions to $defs (#5131)
+- Seen in commit: docs: added note on default tool argument/execution error handling
+
+---
+id: langchain4j-instinct-commit-length
+trigger: "When composing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: NGshiyu/langchain4j
+---
+
+# Langchain4j Instinct Commit Length
+
+## Action
+
+Keep the commit message concise, around 50 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength: 49
+
+---
+id: langchain4j-instinct-test-file-pattern
+trigger: "When creating a test file"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: NGshiyu/langchain4j
+---
+
+# Langchain4j Instinct Test File Pattern
+
+## Action
+
+Name the file with the pattern '*.test.ts'
+
+## Evidence
+
+- Pattern in testing.filePattern: *.test.ts
+
+---
+id: langchain4j-instinct-test-type
+trigger: "When writing tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: NGshiyu/langchain4j
+---
+
+# Langchain4j Instinct Test Type
+
+## Action
+
+Focus on unit tests
+
+## Evidence
+
+- Pattern in testing.testTypes: unit
+
